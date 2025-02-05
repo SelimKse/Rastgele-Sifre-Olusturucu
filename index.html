@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Rastgele Şifre Oluşturucu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rastgele Şifre Oluşturucu</h1>
+      <label>
+        Şifre Uzunluğu:
+        <input id="len" min="6" type="number" value="12" />
+      </label>
+      <br />
+      <label> <input id="upper" type="checkbox" checked /> Büyük Harfler </label>
+      <br />
+      <label> <input id="nums" type="checkbox" checked /> Sayılar </label>
+      <br />
+      <label> <input id="special" type="checkbox" checked /> Özel Karakterler </label>
+      <br />
+      <button class="btn" onclick="generate()">Oluştur</button>
+      <button class="btn" onclick="reset()">Sıfırla</button>
+      <div class="output" id="passOut">Şifrenizi Oluşturun</div>
+    </div>
+  </body>
+</html>

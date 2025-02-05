@@ -1,0 +1,119 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #9d50bb, #6e48aa);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.container label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1em;
+  margin: 10px 0;
+  gap: 0 10px;
+}
+
+.container label span {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.container input[type="checkbox"]:checked {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border-color: transparent;
+  box-shadow: 0 0 5px rgba(255, 117, 140, 0.6);
+}
+
+.container input[type="checkbox"]::after {
+  content: "✔";
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.container input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+.container input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s;
+  font-size: 0.9em;
+}
+
+.container input[type="number"]:focus {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.output {
+  margin: 20px 0;
+  font-size: 1.3em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.btn {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin: 8px;
+  box-shadow: 0 5px 15px rgba(255, 117, 140, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  box-shadow: 0 8px 20px rgba(255, 117, 140, 0.4);
+  transform: translateY(-2px);
+}
