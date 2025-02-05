@@ -14,7 +14,7 @@ Bu proje, kullanıcıların belirli kriterlere göre güvenli şifreler oluştur
 ## 🛠️ Kullanım  
 1. Projeyi klonlayın:  
     ```bash
-    git clone https://github.com/kullanici_adi/rastgele-sifre-olusturucu.git
+    git clone https://github.com/SelimKse/Rastgele-Sifre-Olusturucu.git
     ```  
 2. Proje klasörüne geçin:  
     ```bash
